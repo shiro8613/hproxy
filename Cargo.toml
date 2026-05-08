@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "controlplane",
+    "engine",
+    "shared",
+]
+resolver = "2"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.52.2", features = ["full"] }
+async-trait = "0.1"
