@@ -1,0 +1,12 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pingora-core = { version = "0.8", default-features = false, features = ["boringssl"] }
+pingora-proxy = { version = "0.8", default-features = false, features = ["boringssl"] }
+shared = { path = "../shared" }
+serde = {workspace = true}
+tokio = {workspace = true}
+async-trait = {workspace = true}
