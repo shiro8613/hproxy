@@ -5,8 +5,13 @@ edition = "2024"
 
 [dependencies]
 pingora-core = { version = "0.8", default-features = false, features = ["boringssl"] }
+pingora-http = {version = "0.8", default-features = false}
 pingora-proxy = { version = "0.8", default-features = false, features = ["boringssl"] }
 shared = { path = "../shared" }
 serde = {workspace = true}
 tokio = {workspace = true}
 async-trait = {workspace = true}
+dashmap = {workspace = true}
+arc-swap = {workspace = true}
+fastrand = "2.4"
+crossbeam-skiplist = "0.1"
